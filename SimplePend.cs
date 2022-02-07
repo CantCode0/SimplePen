@@ -34,7 +34,7 @@ namespace Sim
             {
                 x[i] =x[i]+f[i] *dt;
             }
-            Console.WriteLine($"{f[0].ToString()} {f[1].ToString()}");
+            //Console.WriteLine($"{f[0].ToString()} {f[1].ToString()}");
         }
         //--------------------------------------------------------------------
         // rhsFunc: function to calculate right hand side of pendulum
