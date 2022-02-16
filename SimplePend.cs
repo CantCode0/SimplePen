@@ -51,9 +51,6 @@ namespace Sim
         
         public void rk4(double dt)
         {
-
-
-            //p.rk4(dt);
             int i;
             rhsFunc(x,k1);
             for(i=0;i<2;++i)
@@ -71,8 +68,6 @@ namespace Sim
                  x1[i]= x[i]+ dt*k2[i];
             }
             rhsFunc(x1,k4);
-            //Console.WriteLine(k1[1]+" " + k2[1]+" "+k3[1] +" "+k4[1]);
-                
             for(i=0;i<2;++i)
             {
                 x[i] =x[i]+(1.0/6.0)*(k1[i] +2*k2[i]+2*k3[i]+k4[i])*dt;
